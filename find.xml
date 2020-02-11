@@ -13,5 +13,6 @@
     <mask>!*.vm</mask>
     <mask>*.java</mask>
     <mask>*.groovy</mask>
+    <mask>*.vm</mask>
   </component>
 </application>
