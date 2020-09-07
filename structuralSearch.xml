@@ -1,9 +1,20 @@
 <application>
   <component name="StructuralSearch">
-    <searchConfiguration name="InboundChannelSSR" text="class $Class$ implements $Interface$ {}" recursive="false" caseInsensitive="true" type="JAVA" pattern_context="default">
+    <searchConfiguration name="InboundChannelSSR" text="class $Class$ implements $Interface$ {}" recursive="false" caseInsensitive="false" type="JAVA" pattern_context="default">
       <constraint name="__context__" within="" contains="" />
       <constraint name="Class" target="true" within="" contains="" />
-      <constraint name="Interface" within="" contains="" />
+      <constraint name="Interface" regexp="io.netty.channel.ChannelInboundHandler" withinHierarchy="true" within="" contains="" />
+    </searchConfiguration>
+    <searchConfiguration name="FullHttpMessageInChannelInboundHandlerSSR" text="class $CLAZZ$ implements $PARENT$ {&#10;    $ReturnType$ $Method$ ($ParameterType$ $Parameter$) {&#10;        new $Constructor$($Argument$);&#10;    }&#10;}" recursive="false" caseInsensitive="true" type="JAVA" pattern_context="default">
+      <constraint name="__context__" within="" contains="" />
+      <constraint name="Constructor" target="true" within="" contains="" />
+      <constraint name="Argument" minCount="0" maxCount="2147483647" within="" contains="" />
+      <constraint name="ReturnType" within="" contains="" />
+      <constraint name="Method" within="" contains="" />
+      <constraint name="ParameterType" within="" contains="" />
+      <constraint name="Parameter" within="" contains="" />
+      <constraint name="CLAZZ" within="" contains="" />
+      <constraint name="PARENT" regexp="ChannelInboundHandler" withinHierarchy="true" within="" contains="" />
     </searchConfiguration>
   </component>
 </application>
