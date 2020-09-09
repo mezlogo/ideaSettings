@@ -10,9 +10,9 @@
     <mask>*.properties</mask>
     <mask>!*.vm</mask>
     <mask>*.groovy</mask>
-    <mask>*.vm</mask>
     <mask>*.js</mask>
     <mask>*.java</mask>
     <mask>*.proto</mask>
+    <mask>*.vm</mask>
   </component>
 </application>
