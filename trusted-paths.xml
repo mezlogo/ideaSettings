@@ -3,6 +3,7 @@
     <option name="TRUSTED_PATHS">
       <list>
         <option value="$USER_HOME$/pan" />
+        <option value="$USER_HOME$/exo/study" />
       </list>
     </option>
   </component>
